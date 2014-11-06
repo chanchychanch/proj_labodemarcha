@@ -1,0 +1,14 @@
+# -*- coding: cp1252 -*-
+import Tkinter as tk
+import ttk
+
+
+
+if __name__ == '__main__':
+    root=Tk()
+    note=Notebook(root, width= 400, height =400, activefg = 'red', inactivefg = 'blue')
+    note.grid()
+    tab1 = note.add_tab(text = "Tab One",image=scheduledimage)
+    tab2 = note.add_tab(text = "Tab Two")                                                
+    tab3 = note.add_tab(text = "Tab Three")
+    root.mainloop()
